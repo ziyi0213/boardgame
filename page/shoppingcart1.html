@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>購物車</title>
+  <link rel="stylesheet" type="text/css" href="../css/shoppingcart1.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+
+  <script>
+    //狼人殺
+    $(function () {
+      var t = $("#quantity");
+      $("#add").click(function () {
+        t.val(parseInt(t.val()) + 1);
+        $("#min").removeAttr("disabled");
+        setTotal();
+      })
+      $("#min").click(function () {
+        if (parseInt(t.val()) > 0) {
+          t.val(parseInt(t.val()) - 1)
+        } else {
+          $("#min").attr("disabled", "disabled")
+        }
+        setTotal();
+      })
+      function setTotal() {
+        $("#total").html((parseInt(t.val()) * 450).toFixed(2));
+      }
+      setTotal();
+    })
+  </script>
+
+  <script>
+    //阿瓦隆
+    $(function () {
+      var t = $("#quantity2");
+      $("#add2").click(function () {
+        t.val(parseInt(t.val()) + 1);
+        $("#min2").removeAttr("disabled");
+        setTotal();
+      })
+      $("#min2").click(function () {
+        if (parseInt(t.val()) > 0) {
+          t.val(parseInt(t.val()) - 1)
+        } else {
+          $("#min2").attr("disabled", "disabled")
+        }
+        setTotal();
+      })
+      function setTotal() {
+        $("#total2").html((parseInt(t.val()) * 495).toFixed(2));
+      }
+      setTotal();
+    })
+  </script>
+
+  <script>
+    //BANG
+    $(function () {
+      var t = $("#quantity3");
+      $("#add3").click(function () {
+        t.val(parseInt(t.val()) + 1);
+        $("#min3").removeAttr("disabled");
+        setTotal();
+      })
+      $("#min3").click(function () {
+        if (parseInt(t.val()) > 0) {
+          t.val(parseInt(t.val()) - 1)
+        } else {
+          $("#min3").attr("disabled", "disabled")
+        }
+        setTotal();
+      })
+      function setTotal() {
+        $("#total3").html((parseInt(t.val()) * 740).toFixed(2));
+      }
+      setTotal();
+    })
+  </script>
+
+  <script>
+    //德國蟑螂
+    $(function () {
+      var t = $("#quantity4");
+      $("#add4").click(function () {
+        t.val(parseInt(t.val()) + 1);
+        $("#min4").removeAttr("disabled");
+        setTotal();
+      })
+      $("#min4").click(function () {
+        if (parseInt(t.val()) > 0) {
+          t.val(parseInt(t.val()) - 1)
+        } else {
+          $("#min4").attr("disabled", "disabled")
+        }
+        setTotal();
+      })
+      function setTotal() {
+        $("#total4").html((parseInt(t.val()) * 440).toFixed(2));
+      }
+      setTotal();
+    })
+  </script>
+
+  <script>
+    //說書人
+    $(function () {
+      var t = $("#quantity5");
+      $("#add5").click(function () {
+        t.val(parseInt(t.val()) + 1);
+        $("#min5").removeAttr("disabled");
+        setTotal();
+      })
+      $("#min5").click(function () {
+        if (parseInt(t.val()) > 0) {
+          t.val(parseInt(t.val()) - 1)
+        } else {
+          $("#min5").attr("disabled", "disabled")
+        }
+        setTotal();
+      })
+      function setTotal() {
+        $("#total5").html((parseInt(t.val()) * 1160).toFixed(2));
+      }
+      setTotal();
+    })
+  </script>
+
+  <script>
+    //拉密
+    $(function () {
+      var t = $("#quantity6");
+      $("#add6").click(function () {
+        t.val(parseInt(t.val()) + 1);
+        $("#min6").removeAttr("disabled");
+        setTotal();
+      })
+      $("#min6").click(function () {
+        if (parseInt(t.val()) > 0) {
+          t.val(parseInt(t.val()) - 1)
+        } else {
+          $("#min6").attr("disabled", "disabled")
+        }
+        setTotal();
+      })
+      function setTotal() {
+        $("#total6").html((parseInt(t.val()) * 590).toFixed(2));
+      }
+      setTotal();
+    })
+  </script>
+
+  <script>
+    //商品總價
+
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h2>GAMEROOM.COM</h2>
+      <div class="topnav">
+        <div class="search-container">
+
+          <input type="text" placeholder="搜尋.." name="search">
+          <button type="submit"><img src="../image/search.jpg" class="search-logo"></button>
+        </div>
+      </div>
+      <a href="../page/sign.html"> <img src="../image/user.png" class="user-logo"></a>
+      <ul class="menu">
+        <li><a href="../index.html">
+            <div class="underline">首頁</div>
+          </a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">商品區</a>
+          <div class="dropdown-content">
+            <a href="../page/allbg.html">所有桌遊</a>
+            <a href="../page/bgless.html">少人桌遊</a>
+            <a href="../page/bgmore.html">多人桌遊</a>
+          </div>
+        </li>
+        <li><a href="../page/shoppingcart1.html">購物車</a></li>
+        <li><a href="../page/aboutus.html">關於我們</a></li>
+        <li><a href="../page/member.html">會員專區</a></li>
+      </ul>
+
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../image/gotop.jpg"></button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <div class="step1">購物車 <br>
+      ________________
+    </div>
+    <div id="cart">
+      <div class="container">
+        <div class="cart-title">
+          <div class="product">&nbsp;&nbsp;&nbsp;商品</div>
+          <div class="price">&nbsp;&nbsp;&nbsp;單價</div>
+          <div class="count">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;數量</div>
+          <div class="amount">&nbsp;&nbsp;&nbsp;總價</div>
+        </div>
+        <div class="cart-text">
+          <div class="product">
+            <img src="../image/bg1.jpg">
+            <div class="name">&nbsp;狼人殺</div>
+          </div>
+          <div class="price">$450</div>
+          <input id="min" name="" type="button" value="-" />
+          <input id="quantity" name="" type="text" value="0" />
+          <input id="add" name="" type="button" value="+" />
+          <p class="s-total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總價：<label id="total"></label></p>
+
+
+        </div>
+
+        <div class="cart-text">
+          <div class="product">
+            <img src="../image/bg2.jpg">
+            <div class="name">&nbsp;阿瓦隆</div>
+          </div>
+
+          <div class="price">$495</div>
+          <input id="min2" name="" type="button" value="-" />
+          <input id="quantity2" name="" type="text" value="0" />
+          <input id="add2" name="" type="button" value="+" />
+          <p class="s-total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總價：<label id="total2"></label></p>
+        </div>
+
+        <div class="cart-text">
+          <div class="product">
+            <img src="../image/bg3.jpg">
+            <div class="name">BANG！</div>
+          </div>
+
+          <div class="price">$740</div>
+          <input id="min3" name="" type="button" value="-" />
+          <input id="quantity3" name="" type="text" value="0" />
+          <input id="add3" name="" type="button" value="+" />
+          <p class="s-total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總價：<label id="total3"></label></p>
+        </div>
+
+        <div class="cart-text">
+          <div class="product">
+            <img src="../image/bg4.jpg">
+            <div class="name">德國蟑螂</div>
+          </div>
+
+          <div class="price">$440</div>
+          <input id="min4" name="" type="button" value="-" />
+          <input id="quantity4" name="" type="text" value="0" />
+          <input id="add4" name="" type="button" value="+" />
+          <p class="s-total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總價：<label id="total4"></label></p>
+        </div>
+
+        <div class="cart-text">
+          <div class="product">
+            <img src="../image/bg5.jpg">
+            <div class="name">妙語說書人</div>
+          </div>
+
+          <div class="price">$1160</div>
+          <input id="min5" name="" type="button" value="-" />
+          <input id="quantity5" name="" type="text" value="0" />
+          <input id="add5" name="" type="button" value="+" />
+          <p class="s-total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總價：<label id="total5"></label></p>
+        </div>
+
+        <div class="cart-text">
+          <div class="product">
+            <img src="../image/bg6.jpg">
+            <div class="name">Rummikub</div>
+          </div>
+
+          <div class="price">$590</div>
+          <input id="min6" name="" type="button" value="-" />
+          <input id="quantity6" name="" type="text" value="0" />
+          <input id="add6" name="" type="button" value="+" />
+          <p class="s-total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總價：<label id="total6"></label></p>
+        </div>
+
+      </div>
+    
+    </div>
+
+    <div class="step2">立即下單 <br>
+      ________________
+    </div>
+    <form>
+      <fieldset class="buy-form">
+        <legend class="c-legend">付款資訊</legend>
+        <div class="buy-text">
+          
+          <label for="name">姓名 name &nbsp;</label>
+          <input type="text" name="buy"><br><br>
+          <label for="number">電話號碼 number &nbsp;</label>
+          <input type="text" name="buy"><br><br>
+          <label for="address">收件地址 address &nbsp;</label>
+          <input type="text" name="buy"><br><br>
+          <label for="send">付款方式 payway &nbsp;</label>
+          <select class="pay-opt">
+            <option value="a">ATM轉帳</option>
+            <option value="b"> 信用卡轉帳</option>
+            <option value="c">貨到付款</option>
+          </select>
+          <button class="send">結帳</button>
+        </div>
+      </fieldset>
+    </form>
+
+    
+    <div class="gif4 animation animation--infinite animation--up-down"><img src="../image/gif4.jpg"></div>
+    <footer>
+      訪客人數 : 6666人<br>
+      Copyright : GAMEROOM.COM <br>
+      E-mail : gameroom@gmail.com<br>
+      Tel : +886912568749
+      <p class="wellcome anim-typewriter">wellcome to GAMEROOM.COM！！</p>
+    </footer>
+  </div>
+</body>
+
+</html>
