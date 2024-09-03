@@ -1,0 +1,215 @@
+@import url(../css/index.css);
+
+.step-title {
+  position: absolute;
+  top: 10%;
+  left: 14%;
+}
+
+#cart {
+  position: absolute;
+  top: 27%;
+  left: 18%;
+  font-size: 25px;
+}
+
+.cart-title,
+.cart-text {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  height: 90px;
+  background-color: #ddcba365;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.cart-title div,
+.cart-text div {
+  width: 250px;
+  color: #454cb3;
+  line-height: 50px;
+}
+
+.cart-title,
+.cart-text,
+.product {
+  width: 90%;
+}
+
+.cart-text {
+  margin-top: 20px;
+  height: 200px;
+  align-items: center;
+}
+
+.product img {
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+  float: top;
+}
+
+.product {
+  margin-left: 100px;
+}
+
+#quantity,
+#quantity2,
+#quantity3,
+#quantity4,
+#quantity5,
+#quantity6 {
+  width: 50px;
+}
+
+
+.step1 {
+  position: absolute;
+  top: 15%;
+  left: 21%;
+  font-size: 30px;
+  color: #454cb3;
+}
+
+.step2 {
+  position: absolute;
+  top: 190%;
+  left: 21%;
+  font-size: 30px;
+  color: #454cb3;
+}
+.c-legend{
+  font-size: 27px;
+  color: #2760ac;
+  border-color: #39b0ce41;
+  border-radius: 15px;
+  background-color: #2ea4c231;
+  padding: 2px 35px 5px 35px;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+}
+fieldset {
+  display: block;
+  min-inline-size: min-content;
+  width: 50%;
+  padding: 55px;
+  border-color: #18749956;
+}
+
+.buy-form {
+  position: absolute;
+  left: 22%;
+  top: 205%;
+}
+
+
+.buy-text {
+  text-align: left;
+  color: #2760ac;
+  font-size: 23px;
+  padding-left: 20px;
+}
+
+
+
+.buy,.pay-opt {
+  font-size: 22px;
+  color: #2760ac;
+  border-color: #39b0ce41;
+  background-color: #2ea4c231;
+  padding: 2px 35px 5px 35px;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+}
+.send{
+  position: absolute;
+  top: 80%;
+  right: 5%;
+  font-size: 30px;
+  color: #2760ac;
+  border: none;
+  border-radius: 5px;
+  background-color: #64b4ad48;
+  padding: 2px 35px 5px 35px;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+  cursor: pointer;
+}
+
+.send:hover{
+  background-color: #2aa58069;
+}
+
+
+
+.gif4{
+  position: absolute;
+  top: 12%;
+  left: 12%;
+}
+/*footer*/
+footer {
+  height: 200px;
+  background-color: #dfe7fd;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2300px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+  color: #128571;
+}
+
+.wellcome {
+  position: absolute;
+  top: 2500px;
+  left: 40%;
+  border-right: 2px solid #ffffffbf;
+  font-size: 28px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  width: 450px;
+  color: #532a88;
+}
+
+/*footer*/
+
+/*animation*/
+
+.g-horizontal.animated,
+.g-horizontal.animated-hover:hover,
+.g-horizontal {
+  -webkit-animation: horizontal 3s ease infinite;
+  animation: horizontal 3s ease infinite;
+}
+
+.animation {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+.animation--infinite {
+  animation-iteration-count: infinite;
+}
+.animation--up-down {
+  animation-name: upDown;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
